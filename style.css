@@ -2,6 +2,8 @@ body{
     text-align: center;
     background-color: black;
     color: white;
+    width: 80%;
+    margin: auto;
 }
 
 /* general */
@@ -10,8 +12,14 @@ section{
     padding: 50px 30px;
 }
 
-h1{
+h1, h2{
     font-size: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 /* hero */
@@ -78,4 +86,24 @@ padding: 50px 30px;
 }
 
 /* fun-facts */
+.fun-facts-container{
+    display: flex;
+    justify-content: space-around;
+}
 
+.fun-fact-card{
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 20px;
+    margin-right: 10px;
+    background-color: grey;
+}
+
+.fun-fact-card:hover{
+    background-color: orange;
+    color: black;
+}
+
+.fun-fact-headline{
+font-size: 20px;
+}
