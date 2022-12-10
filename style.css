@@ -1,3 +1,81 @@
 body{
     text-align: center;
+    background-color: black;
+    color: white;
 }
+
+/* general */
+
+section{
+    padding: 50px 30px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+/* hero */
+
+.hero-container{
+    display: flex;
+    text-align: justify;
+    justify-content: space-around;
+}
+
+.hero-image{
+    width: 700px;
+    border-radius: 1000px;
+    padding: 15px;
+    border: 1px white dotted;
+}
+
+.hero-text-container{
+text-align: center;
+padding: 50px 30px;
+}
+
+.hero p{
+    font-size: 18px;
+}
+
+/* roles */
+
+.roles-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*fun stats*/
+
+.fun-stats-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fun-stats-headline{
+    font-size: 50px;
+}
+
+ .fun-stats-image{
+    border-radius: 50px;
+    border: 1px white dotted;
+    padding: 15px;
+}
+
+.fun-figures-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fun-figure-block{
+    width: 100px;
+}
+
+.fun-figure{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+/* fun-facts */
+
