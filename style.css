@@ -1,9 +1,16 @@
+:root{
+    --headline-font: 'Martel', serif;
+    --main-font: 'Roboto', sans-serif;
+}
+
 body{
     text-align: center;
     background-color: black;
     color: white;
-    width: 80%;
     margin: auto;
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 2;
 }
 
 /* general */
@@ -14,12 +21,23 @@ section{
 
 h1, h2{
     font-size: 50px;
+    font-family: var(--headline-font);
+}
+
+h3{
+    font-family: var(--headline-font);
 }
 
 a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+/* header */
+header{
+    height: 30px;
+    background-color: grey;
 }
 
 /* hero */
@@ -51,6 +69,23 @@ padding: 50px 30px;
 .roles-container{
     display: flex;
     justify-content: space-around;
+}
+
+.role-image{
+    width: 250px;
+    border-radius: 150px;
+    padding: 10px;
+    border: 1px white dotted;
+    margin:5px;
+}
+
+.role-image:hover{
+    width: 400px;
+    background-color: white;
+    border-radius: 0px;
+    text-align: center;
+    transition:cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
 }
 
 /*fun stats*/
@@ -95,15 +130,40 @@ padding: 50px 30px;
     border: 1px solid white;
     border-radius: 100px;
     padding: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
     background-color: grey;
 }
 
 .fun-fact-card:hover{
-    background-color: orange;
+    background-color: white;
     color: black;
 }
 
 .fun-fact-headline{
 font-size: 20px;
+}
+
+/* reviews */
+
+.review-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.review-card{
+    width: 270px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: grey 1px solid;
+    margin-right: 15px;
+    padding: 5px;
+    /* box-shadow: ; */
+}
+
+/* footer */
+
+footer{
+    background-color: lightcoral;
+    padding: 100px;
 }
