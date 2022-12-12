@@ -77,15 +77,15 @@ padding: 50px 30px;
     padding: 10px;
     border: 1px white dotted;
     margin:5px;
+    transition:400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
 }
 
 .role-image:hover{
     width: 400px;
-    background-color: white;
-    border-radius: 0px;
     text-align: center;
-    transition:cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
+    border-radius: 250px;
+    cursor:zoom-in;
 }
 
 /*fun stats*/
@@ -141,6 +141,30 @@ padding: 50px 30px;
 
 .fun-fact-headline{
 font-size: 20px;
+}
+
+.red, .orange, .green, .yellow{
+    transition:400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.red:hover{
+    background-color: rgb(169, 36, 36);
+    color: white;
+}
+
+.orange:hover{
+    background-color: orange;
+    color: white;
+}
+
+.yellow:hover{
+    background-color: rgb(198, 171, 20);
+    color: white;
+}
+
+.green:hover{
+    background-color: rgb(107, 143, 53);
+    color: white;
 }
 
 /* reviews */
