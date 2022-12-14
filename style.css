@@ -13,7 +13,7 @@
 body{
     /* padding-top: 50px; */
     text-align: center;
-    background: url(images/background.jpg);
+    background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/764/original/v1008-25-b.jpg?1671054428);
     background-repeat: repeat-x;
     background-repeat: repeat-y;
     color: var(--main-font-color);
@@ -306,7 +306,8 @@ font-size: 20px;
 footer{
     background-color: var(--block-color-1);
     font-size: 12px;
-    line-height: 5;
+    line-height: 2;
+    padding: 30px;
 }
 
 footer p{
