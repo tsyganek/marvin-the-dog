@@ -38,7 +38,7 @@ h1{
 }
 
 h2{
-    font-size: 50px;
+    font-size: 60px;
 }
 
 h3{
@@ -80,10 +80,6 @@ line-height: 2;
 .navigation-list-block{
 margin-right: 30px;
 }
-
-
-
-
 
 /* hero */
 
@@ -290,6 +286,7 @@ font-size: 20px;
 
 .get-in-touch-smm-container{
   padding-top: 50px;
+  padding-left: 50px;
 }
 
 .get-in-touch-button:hover, .get-in-touch:focus{
@@ -302,7 +299,7 @@ font-size: 20px;
 
 footer{
     background-color: var(--block-color-1);
-    font-size: 10px;
+    font-size: 12px;
     line-height: 5;
 }
 
