@@ -18,7 +18,7 @@ body{
     background-repeat: repeat-y;
     color: var(--main-font-color);
     margin: auto;
-    font-family: var(--main-font);
+    font-family: var(--main-font-2);
     font-size: 14px;
 }
 
@@ -293,6 +293,12 @@ font-size: 20px;
     border: 3px solid var(--block-color-1);
     background-color: var(--block-color-2);
     cursor: pointer;
+}
+
+.get-in-touch-text{
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 /* footer */
