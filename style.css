@@ -1,16 +1,22 @@
 :root{
     --headline-font: 'Martel', serif;
+    --headline-font-2: 'Fredericka the Great', cursive;
+    --main-font-2:'Raleway', sans-serif;
     --main-font: 'Roboto', sans-serif;
+    --main-font-color: rgb(101, 52, 6);
+    --section-background-color-1: rgba(242, 240, 332, 0.6);
+    --section-background-color-2:rgba(228, 181, 137, 0.6);
 }
 
 body{
     text-align: center;
-    background-color: black;
-    color: white;
+    background: url(images/background.jpg);
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    color: var(--main-font-color);
     margin: auto;
     font-family: var(--main-font);
     font-size: 14px;
-    line-height: 2;
 }
 
 /* general */
@@ -20,12 +26,20 @@ section{
 }
 
 h1, h2{
+    font-family: var(--headline-font-2);
+    font-weight: 400;
+}
+
+h1{
+    font-size: 80px;
+}
+
+h2{
     font-size: 50px;
-    font-family: var(--headline-font);
 }
 
 h3{
-    font-family: var(--headline-font);
+    font-family: var(--headline-font-2);
 }
 
 a{
@@ -41,6 +55,10 @@ header{
 }
 
 /* hero */
+
+.hero{
+    background-color: var(--section-background-color-1);
+}
 
 .hero-container{
     display: flex;
@@ -66,9 +84,20 @@ padding: 50px 30px;
 
 /* roles */
 
+.roles{
+    background-color: var(--section-background-color-2);
+}
+
 .roles-container{
+    width: 80%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.role-card{
+    margin-bottom: 25px;
 }
 
 .role-image{
@@ -78,21 +107,31 @@ padding: 50px 30px;
     border: 1px white dotted;
     margin:5px;
     transition:400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
 }
 
 .role-image:hover{
     width: 400px;
-    text-align: center;
     border-radius: 250px;
-    cursor:zoom-in;
+}
+
+.role-description{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 5px 0;
+    font-family: var(--headline-font-2);
 }
 
 /*fun stats*/
 
+.fun-stats{
+    background-color: var(--section-background-color-1);
+}
+
 .fun-stats-container{
+    width: 70%;
     display: flex;
     justify-content: space-around;
+    margin: auto;
 }
 
 .fun-stats-headline{
@@ -100,30 +139,37 @@ padding: 50px 30px;
 }
 
  .fun-stats-image{
+    width: 400px;
     border-radius: 50px;
     border: 1px white dotted;
     padding: 15px;
+    margin-right: 40px;
 }
 
 .fun-figures-container{
+    padding-top: 50px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .fun-figure-block{
     width: 100px;
+    margin: 15px;
+    margin-bottom: 30px;
 }
 
-.fun-figure{
-    font-size: 40px;
-    font-weight: bold;
-    margin: 10px 0px;
-}
+ .fun-figure{
+    font-family: var(--headline-font-2);
+    font-size: 30px;
+    font-weight: 400;
+    margin: 5px;}
 
 /* fun-facts */
 .fun-facts-container{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .fun-fact-card{
@@ -132,6 +178,10 @@ padding: 50px 30px;
     padding: 20px;
     margin-right: 20px;
     background-color: grey;
+}
+
+.fun-fact-card:nth-child(3n){
+    margin-right: 0px;
 }
 
 .fun-fact-card:hover{
